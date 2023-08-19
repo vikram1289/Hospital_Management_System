@@ -15,9 +15,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CalendarMakeMyTrip {
 public static void main(String[] args) {
+	
+//	System.setProperty("webdriver.chrome.driver", "V:\\Chrome Driverssss\\chromedriver.exe");
+	
 	WebDriverManager.chromedriver().setup();
+	
 	ChromeOptions options = new ChromeOptions();
 	options.addArguments("--remote-allow-origins=*");
+	
 	WebDriver driver = new ChromeDriver(options);
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
