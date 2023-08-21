@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@Listeners(GenericUtilities.ListnerImpClass.class)
+@Listeners(GenericUtilities.ListnersImplementationClass.class)
 public class TestNGListnersClassTest {
 
 	@Test

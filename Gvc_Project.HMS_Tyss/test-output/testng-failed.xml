@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice.TestNG_OpenEdgeTest">
+      <class name="Practice.TestNGListnersClassTest">
         <methods>
-          <include name="config_AC"/>
-          <include name="config_BC"/>
-          <include name="executeTest"/>
+          <include name="listners"/>
         </methods>
-      </class> <!-- Practice.TestNG_OpenEdgeTest -->
+      </class> <!-- Practice.TestNGListnersClassTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
