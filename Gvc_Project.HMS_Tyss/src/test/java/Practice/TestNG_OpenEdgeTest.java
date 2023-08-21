@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -18,12 +19,12 @@ public class TestNG_OpenEdgeTest {
 	@Parameters("browser")
 	@BeforeClass
 	public void config_BC(String browser) {
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.firefoxdriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		
-		if(browser.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver(options);
+		if(browser.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
 		}else if(browser.equalsIgnoreCase("edge")) {
 	          driver = new EdgeDriver();
 		}

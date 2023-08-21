@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice.CalendarMakeMyTripp">
+      <class name="Practice.TestNG_OpenEdgeTest">
         <methods>
-          <include name="makeMyTrip"/>
+          <include name="config_AC"/>
+          <include name="config_BC"/>
+          <include name="executeTest"/>
         </methods>
-      </class> <!-- Practice.CalendarMakeMyTripp -->
+      </class> <!-- Practice.TestNG_OpenEdgeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
