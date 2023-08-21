@@ -23,7 +23,7 @@ public static void main(String[] args) {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	driver.get("https://www.amazon.in/");
+	driver.get("https://www.amazon.in");
 	driver.findElement(By.id("twotabsearchtextbox")).sendKeys("phone");
 	driver.findElement(By.id("nav-search-submit-button")).click();
 	WebElement brand = driver.findElement(By.xpath("//li[@aria-label='Samsung']/span"));
